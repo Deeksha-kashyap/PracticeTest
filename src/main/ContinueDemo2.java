@@ -1,16 +1,15 @@
 package main;
 
-//This demo is for labeled break statement
-
-public class BreakDemo2 {
+//This demo is for labeled continue statement
+public class ContinueDemo2 {
     public static void main(String[] args) {
         outer:
-        for(int i=0; i<5; i++)
+        for (int i=0; i<5; i++)
         {
-            while (true)
+            for (int j=0; j<5; j++)
             {
                 System.out.println("Hello");
-                break;    //outer;
+                continue;     //outer;
             }
         }
         System.out.println("Good-Bye");

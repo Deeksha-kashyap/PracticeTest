@@ -1,7 +1,7 @@
 package main;
 
 import java.io.*;
-public class ReadDemo {
+ class ReadDemo {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         ObjectInputStream in = new ObjectInputStream(new FileInputStream("MyFile.txt"));
         Student s=(Student)in.readObject();

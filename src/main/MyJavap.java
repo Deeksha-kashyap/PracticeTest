@@ -10,6 +10,8 @@ public class MyJavap {
         Field f[]=c.getDeclaredFields();
         for (int i = 0; i < f.length; i++)
             System.out.println(f[i]);
+        System.out.println("Constructor.......");
+        Constructor con[]=c.getDeclaredConstructors();
 
     }
 }

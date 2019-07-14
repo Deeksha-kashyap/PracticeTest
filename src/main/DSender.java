@@ -11,5 +11,7 @@ public class DSender {
         InetAddress ia=InetAddress.getByName("localhost");
         byte[] barr=str.getBytes();
         DatagramPacket dp=new DatagramPacket(barr,str.length(),ia,3000);
+        ds.send(dp);
+        ds.close();
     }
 }

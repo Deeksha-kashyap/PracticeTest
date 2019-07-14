@@ -13,5 +13,6 @@ public class SimpleServer {
         System.out.println("Connection is established with the client");
         OutputStream serverOut=clientSocket.getOutputStream();
         PrintWriter pw=new PrintWriter(serverOut,true);
+        pw.println("Hello Net World");
     }
 }

@@ -14,7 +14,7 @@ public class DisplayData {
             int i;
             while((i=stream.read())!=-1)
             {
-                System.out.println((char)i);
+                System.out.print((char)i);
             }
         }
         catch (Exception e)

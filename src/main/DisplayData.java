@@ -11,6 +11,11 @@ public class DisplayData {
             URL url=new URL("https://github.com/Deeksha-kashyap/C-sharp-Programs");
             URLConnection urlcon=url.openConnection();
             InputStream stream=urlcon.getInputStream();
+            int i;
+            while((i=stream.read())!=-1)
+            {
+                System.out.println((char)i);
+            }
         }
         catch (Exception e)
         {

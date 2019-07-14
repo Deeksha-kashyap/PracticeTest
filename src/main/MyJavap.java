@@ -8,5 +8,8 @@ public class MyJavap {
         Class c=Class.forName(args[0]);
         System.out.println("Fields........");
         Field f[]=c.getDeclaredFields();
+        for (int i = 0; i < f.length; i++)
+            System.out.println(f[i]);
+
     }
 }

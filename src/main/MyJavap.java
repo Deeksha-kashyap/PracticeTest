@@ -14,6 +14,8 @@ public class MyJavap {
         Constructor con[]=c.getDeclaredConstructors();
         for (int i = 0; i < con.length; i++)
             System.out.println(con[i]);
+        System.out.println("Methods..........");
+        Method m[]=c.getDeclaredMethods();
 
 
 

@@ -12,5 +12,8 @@ public class SimpleClient {
        //Socket client=new Socket(InetAddress.getLocalHost(1,5432));
         InputStream is=client.getInputStream();
         BufferedReader br=new BufferedReader(new InputStreamReader(is));
+        String msgFromServer=br.readLine();
+        System.out.println(msgFromServer);
+        client.close();
     }
 }

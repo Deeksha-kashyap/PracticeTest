@@ -8,6 +8,7 @@ public class URLDemo {
         {
             URL url=new URL("https://github.com");
             System.out.println("Protocol:"+url.getProtocol());
+            System.out.println("Host Name:"+url.getHost());
         }
         catch(Exception e)
         {

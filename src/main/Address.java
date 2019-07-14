@@ -14,7 +14,7 @@ public class Address {
         {
             String name=br.readLine();
             InetAddress ip=InetAddress.getByName(name);
-            System.out.println("The ip Address is"+ip);
+            System.out.println("The ip Address is "+ip);
         }
         catch(UnknownHostException e)
         {

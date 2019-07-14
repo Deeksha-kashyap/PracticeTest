@@ -1,6 +1,7 @@
 package main;
 
 import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -11,5 +12,6 @@ public class SimpleServer {
         Socket clientSocket=server.accept();
         System.out.println("Connection is established with the client");
         OutputStream serverOut=clientSocket.getOutputStream();
+        PrintWriter pw=new PrintWriter(serverOut,true);
     }
 }

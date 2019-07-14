@@ -1,6 +1,7 @@
 package main;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.rmi.UnknownHostException;
@@ -18,6 +19,10 @@ public class Address {
         catch(UnknownHostException e)
         {
             System.out.println("Website is not found");
+        }
+        catch(IOException e)
+        {
+            System.out.println(e);
         }
     }
 }

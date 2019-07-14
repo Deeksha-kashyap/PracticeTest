@@ -17,7 +17,7 @@ public class Address {
         }
         catch(UnknownHostException e)
         {
-
+            System.out.println("Website is not found");
         }
     }
 }

@@ -8,5 +8,6 @@ public class DSender {
         DatagramSocket ds=new DatagramSocket();
         String str="India is a good Country";
         InetAddress ia=InetAddress.getByName("localhost");
+        byte[] barr=str.getBytes();
     }
 }

@@ -12,6 +12,10 @@ public class MyJavap {
             System.out.println(f[i]);
         System.out.println("Constructor.......");
         Constructor con[]=c.getDeclaredConstructors();
+        for (int i = 0; i < con.length; i++)
+            System.out.println(con[i]);
+
+
 
     }
 }

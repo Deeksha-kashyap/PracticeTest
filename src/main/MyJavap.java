@@ -16,8 +16,7 @@ public class MyJavap {
             System.out.println(con[i]);
         System.out.println("Methods..........");
         Method m[]=c.getDeclaredMethods();
-
-
-
+        for (int i = 0; i < m.length; i++)
+            System.out.println(m[i]);
     }
 }

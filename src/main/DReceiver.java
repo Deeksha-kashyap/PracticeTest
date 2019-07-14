@@ -9,5 +9,8 @@ public class DReceiver {
         byte[] buf=new byte[1024];
         DatagramPacket dp=new DatagramPacket(buf,buf.length);
         ds.receive(dp);
+        String strReccv=new String(dp.getData());
+        System.out.println(strReccv);
+        ds.close();
     }
 }
